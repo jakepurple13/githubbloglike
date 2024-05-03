@@ -3,13 +3,14 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi"
-                 name="Instance Name"
+                 name="Jakepurple13's Programming Adventures"
                  start-page="starter.md">
 
     <toc-element topic="starter.md"/>
     <toc-element topic="AndroidX.md">
         <toc-element topic="Safe-Args-in-NavigationCompose.md"/>
     </toc-element>
+    <toc-element topic="Android.md"/>
     <toc-element topic="Compose.md">
     </toc-element>
 </instance-profile>

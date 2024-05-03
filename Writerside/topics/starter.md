@@ -4,5 +4,7 @@ This "blog" like repo is for things I've discovered when there are new updates t
 Compose Multiplatform, and anything else cool I discover.
 
 ## Topics
+
+* [Android](Android.md)
 * [AndroidX](AndroidX.md)
 * [Compose](Compose.md)
