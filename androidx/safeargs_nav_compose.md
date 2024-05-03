@@ -10,6 +10,14 @@ I already spent the time to convert one of my side projects, [OtakuWorld](https:
 into using it.
 It makes the code much more readable and so fun and easy to use!
 
+## Contents
+
+* [Quick Overview](#quick-overview)
+* [So why write about it?](#so-why-write-about-it)
+* [The Problem](#the-problem)
+* [The Solution](#the-solution)
+* [Conclusion](#conclusion)
+
 ## Quick Overview
 
 A quick overview of what this brought, (or
