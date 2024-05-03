@@ -7,4 +7,5 @@
                  start-page="starter.md">
 
     <toc-element topic="starter.md"/>
+    <toc-element topic="safeargs_nav_compose.md"/>
 </instance-profile>
