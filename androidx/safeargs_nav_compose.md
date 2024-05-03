@@ -27,8 +27,8 @@ sealed class Screen(val route: String) {
     }
     
     data object GlobalSearchScreen : Screen("global_search") {
-    fun navigate(navController: NavController, title: String? = null) {
-        navController.navigate("$route?searchFor=$title") { launchSingleTop = true }
+        fun navigate(navController: NavController, title: String? = null) {
+            navController.navigate("$route?searchFor=$title") { launchSingleTop = true }
     }
     
     data object OtherSettings : Screen("others_settings")
