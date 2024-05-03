@@ -20,7 +20,7 @@ It makes the code much more readable and so fun and easy to use!
 
 ## Quick Overview
 
-A quick overview of what this brought, (or
+A quick overview of what this brought (or
 read [this great article](https://medium.com/androiddevelopers/navigation-compose-meet-type-safety-e081fb3cf2f8) for a
 quick summary):
 
@@ -147,8 +147,7 @@ data object NotificationScreen : Screen("notifications")
 data object DetailsScreen : Screen("details")
 ```
 
-To create a deep link with navigation compose, it's pretty simple:
-
+To create a deep link with navigation compose:
 ```Kotlin
 composable(
     route = Screen.NotificationScreen.route,
@@ -162,8 +161,7 @@ composable(
 ) { ... }
 ```
 
-Pretty simple. And to set the notification's destination to go there:
-
+Pretty simple, right?. And to set the notification's destination to go there, you can create an intent like:
 ```Kotlin
 val deepLinkIntent = Intent(
     Intent.ACTION_VIEW,
@@ -173,13 +171,11 @@ val deepLinkIntent = Intent(
 )
 ```
 
-You create the intent like that.
-
 ## The Problem
 
 Now that we are on the same page, here is where my problem comes in. The notification screen was easy and required ZERO
 changes. It just worked...
-The details screen however, which now has arguments:
+The details screen, however, which now has arguments:
 
 ```Kotlin
 @Serializable
@@ -325,6 +321,8 @@ Done! No errors! Run!
 
 Well, now that this is all set up, there is one last thing to deal with...Creating the deep link for the destination.
 
+### Deep Link
+
 Remember how I mentioned:
 `Well, My Screen.DetailsScreen.Details is not an object...It's a class.`
 and
@@ -398,12 +396,44 @@ composable<Screen.DetailsScreen.Details>(
 }
 ```
 
+It was perfect!
+I ran it, and it was working.........Until I tried to pass an empty string through it, and it crashed.
+This confused me for longer than I'm willing to admit.
+The generated string looked like:
+
+```
+com.programmersbox.uiviews.utils.Screen.DetailsScreen.Details/TitleHere//UrlHere/ImageUrlHere/SourceHere
+```
+
+Notice the issue?
+`TitleHere//UrlHere`.
+It couldn't understand the empty string.
+FORTUNATELY, that is a straightforward solve:
+
+```Kotlin
+val route = Screen.DetailsScreen.Details(
+    title = itemModel?.title.orEmpty().ifEmpty { "NA" },
+    description = itemModel?.description.orEmpty().ifEmpty { "NA" },
+    url = itemModel?.url.orEmpty().ifEmpty { "NA" },
+    imageUrl = itemModel?.imageUrl.orEmpty().ifEmpty { "NA" },
+    source = itemModel?.source?.serviceName.orEmpty().ifEmpty { "NA" },
+).generateRouteWithArgs(
+    mapOf(
+        "title" to NavType.StringType as NavType<Any?>,
+        "description" to NavType.StringType as NavType<Any?>,
+        "url" to NavType.StringType as NavType<Any?>,
+        "imageUrl" to NavType.StringType as NavType<Any?>,
+        "source" to NavType.StringType as NavType<Any?>,
+    )
+)
+```
+
 ## Conclusion
 
 This was a real interesting problem that I'm sure people are going to run into.
-Since Safe Args for Navigation Compose JUST came out (at the time of writing this) there's a lot of people that don't
-know some of these ins and outs and only what has been documented with the 2 or 3 articles posted about it so far.
-It was really fun to find this solution and I hope in one of the next updates, we are given more support for some of
+Since Safe Args for Navigation Compose JUST came out (at the time of writing this), there are a lot of people that don't
+know some of these ins and outs and only what has been documented with the two or three articles posted about it so far.
+It was really fun to find this solution, and I hope in one of the next updates; we are given more support for some of
 these use cases.
 
 I hope you enjoyed my findings, rantings, ramblings since I sure had a lot of fun dealing with this.
