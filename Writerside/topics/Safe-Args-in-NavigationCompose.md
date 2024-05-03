@@ -2,7 +2,7 @@
 
 # Safe Args in Navigation Compose!
 
-Version: 2.8.0-alpha08
+Version: [2.8.0-alpha08](https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0-alpha08 "AndroidX Releases for Navigation")
 
 In the latest update of Navigation for Compose, they introduced Safe Args using KotlinX Serialization! And it is
 amazing!
