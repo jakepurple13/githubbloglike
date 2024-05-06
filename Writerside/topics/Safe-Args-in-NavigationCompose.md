@@ -396,6 +396,48 @@ composable<Screen.DetailsScreen.Details>(
 }
 ```
 
+### Update (5/6/24)
+
+I have since found a way to generate the `navDeepLink` using a built-in method!
+
+```Kotlin
+public inline fun <reified T : Any> navDeepLink(
+    basePath: String,
+    typeMap: Map<KType, @JvmSuppressWildcards NavType<*>> = emptyMap(),
+    noinline deepLinkBuilder: NavDeepLinkDslBuilder.() -> Unit = { }
+): NavDeepLink = navDeepLink(basePath, T::class, typeMap, deepLinkBuilder)
+```
+
+This does exactly what we want!
+With a little needed help.
+If I just do:
+
+```Kotlin
+navDeepLink<Screen.DetailsScreen.Details>("")
+```
+
+That's an error since digging down, the basePath cannot be empty.
+So!
+If I do:
+
+```Kotlin
+navDeepLink<Screen.DetailsScreen.Details>(
+    basePath = genericInfo.deepLinkUri + Screen.DetailsScreen.Details::class.qualifiedName
+)
+```
+
+It works perfectly! The output becomes:
+
+```
+genericInfo.deepLinkUri + "com.programmersbox.uiviews.utils.Screen.DetailsScreen.Details/{title}/{description}/{url}/{imageUrl}/{source}"
+```
+
+This is still not perfect as I did still need to add `Screen.DetailsScreen.Details::class.qualifiedName`
+to be the basePath,
+but it is certainly better than manually typing it! And we take those!
+
+### End of Update
+
 It was perfect!
 I ran it, and it was working.........Until I tried to pass an empty string through it, and it crashed.
 This confused me for longer than I'm willing to admit.
