@@ -16,6 +16,8 @@ It makes the code much more readable and so fun and easy to use!
 * [So why write about it?](#so-why-write-about-it)
 * [The Problem](#the-problem)
 * [The Solution](#the-solution)
+  * [Deep Link](#deep-link)
+  * [Update (5/6/24)](#update-5-6-24)
 * [Conclusion](#conclusion)
 
 ## Quick Overview
