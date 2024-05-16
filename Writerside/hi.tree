@@ -12,5 +12,6 @@
     </toc-element>
     <toc-element topic="Android.md"/>
     <toc-element topic="Compose.md">
+        <toc-element topic="Shared-Element-Transitions.md"/>
     </toc-element>
 </instance-profile>
