@@ -222,7 +222,8 @@ fun Screens() {
     val navController = rememberNavController()
     SharedTransitionLayout {
         NavHost(navController, startDestination = "first") {
-            composable(
+            //This could easily be modified to accept the string route
+            animatedScopeComposable(
                 "first",
                 enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
                 exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
