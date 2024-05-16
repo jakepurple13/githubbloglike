@@ -227,7 +227,7 @@ fun Screens() {
                 enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
                 exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
             ) {
-
+                FirstScreen()
             }
             //This could easily be modified to accept the string route
             animatedScopeComposable(
