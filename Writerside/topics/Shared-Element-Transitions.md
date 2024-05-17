@@ -221,33 +221,35 @@ And that's it! This allows me to set things up much easier:
 fun Screens() {
     val navController = rememberNavController()
     SharedTransitionLayout {
-        NavHost(navController, startDestination = "first") {
-            //This could easily be modified to accept the string route
-            animatedScopeComposable(
-                "first",
-                enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
-                exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
-            ) {
-                FirstScreen()
-            }
-            //This could easily be modified to accept the string route
-            animatedScopeComposable(
-                "second",
-                enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
-                exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
-            ) {
-                SecondScreen()
-            }
-            composable(
-                "third",
-                enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
-                exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
-            ) {
-                Column(Modifier.fillMaxWidth()) {
-                    Text("Nothing to see here. Move on.")
-                    Spacer(Modifier.size(200.dp))
-                    Button(onClick = { navController.popBackStack("first", false) }) {
-                        Text("Pop back to Text")
+        CompositionLocalProvider(LocalSharedElementScope provides this) {
+            NavHost(navController, startDestination = "first") {
+                //This could easily be modified to accept the string route
+                animatedScopeComposable(
+                    "first",
+                    enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
+                    exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
+                ) {
+                    FirstScreen()
+                }
+                //This could easily be modified to accept the string route
+                animatedScopeComposable(
+                    "second",
+                    enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
+                    exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
+                ) {
+                    SecondScreen()
+                }
+                composable(
+                    "third",
+                    enterTransition = { slideInHorizontally(initialOffsetX = { -it }) },
+                    exitTransition = { slideOutHorizontally(targetOffsetX = { it }) }
+                ) {
+                    Column(Modifier.fillMaxWidth()) {
+                        Text("Nothing to see here. Move on.")
+                        Spacer(Modifier.size(200.dp))
+                        Button(onClick = { navController.popBackStack("first", false) }) {
+                            Text("Pop back to Text")
+                        }
                     }
                 }
             }
