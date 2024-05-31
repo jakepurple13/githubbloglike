@@ -12,6 +12,7 @@ Compose Multiplatform, and anything else cool I discover.
 - [Opera GX](https://www.opera.com/gx)
 - [VSCode](https://code.visualstudio.com/)
 - [Scrcpy](https://github.com/Genymobile/scrcpy?tab=readme-ov-file)
+- [Jadx](https://github.com/skylot/jadx)
 
 ## Topics
 
