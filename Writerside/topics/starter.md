@@ -19,4 +19,4 @@ Compose Multiplatform, and anything else cool I discover.
 * [Android](Android.md)
 * [AndroidX](AndroidX.md)
 * [Compose](Compose.md)
-* [CMP Projects](CMPProjects.md)
+* [Compose Multiplatform Projects](Compose-Multiplatform-Projects.md)

@@ -14,5 +14,5 @@
     <toc-element topic="Compose.md">
         <toc-element topic="Shared-Element-Transitions.md"/>
     </toc-element>
-    <toc-element topic="CMPProjects.md"/>
+    <toc-element topic="Compose-Multiplatform-Projects.md"/>
 </instance-profile>
