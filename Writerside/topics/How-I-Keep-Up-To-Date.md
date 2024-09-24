@@ -13,6 +13,9 @@ Well, I'm going to list all the ways I keep up to date with this stuff!
     - An incredible repository that, when watching for releases, will automatically let you know when AndroidX has a
       release!
 
+- [Mishaal Rahman](https://linktr.ee/MishaalRahman)
+    - He does super deep dives into Android that are always useful and informative.
+
 - [Skydoves](https://github.com/skydoves)
     - [Twitter Link](https://x.com/github_skydoves)
     - Does incredible stuff and some really nice libraries! I've seen him tweeting out new things that are coming out in
@@ -30,8 +33,8 @@ Well, I'm going to list all the ways I keep up to date with this stuff!
     - [Twitter Link](https://x.com/ianhlake)
     - He will post about AndroidX updates when they happen, which is really useful.
 
-- [Mishaal Rahman](https://linktr.ee/MishaalRahman)
-    - He does super deep dives into Android that are always useful and informative.
+- [John O'Reilly](https://github.com/joreilly)
+    - [Twitter Link](https://x.com/joreilly)
 
 - GitHub Topics
     - This might be a bit of a strange one to some people, but one of the best ways I find myself learning more and
