@@ -30,6 +30,9 @@ Well, I'm going to list all the ways I keep up to date with this stuff!
     - [Twitter Link](https://x.com/ianhlake)
     - He will post about AndroidX updates when they happen, which is really useful.
 
+- [Mishaal Rahman](https://linktr.ee/MishaalRahman)
+    - He does super deep dives into Android that are always useful and informative.
+
 - GitHub Topics
     - This might be a bit of a strange one to some people, but one of the best ways I find myself learning more and
       keeping up to date is looking at what others have done.
