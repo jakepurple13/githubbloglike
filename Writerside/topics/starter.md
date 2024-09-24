@@ -13,6 +13,7 @@ Compose Multiplatform, and anything else cool I discover.
 - [VSCode](https://code.visualstudio.com/)
 - [Scrcpy](https://github.com/Genymobile/scrcpy?tab=readme-ov-file)
 - [Jadx](https://github.com/skylot/jadx)
+- [](How-I-Keep-Up-To-Date.md)
 
 ## Topics
 

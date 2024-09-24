@@ -6,6 +6,7 @@
                  name="Jakepurple13's Programming Adventures"
                  start-page="starter.md">
 
+    <toc-element topic="How-I-Keep-Up-To-Date.md"/>
     <toc-element topic="starter.md"/>
     <toc-element topic="How-to-Side-Project.md"/>
     <toc-element topic="AndroidX.md">
