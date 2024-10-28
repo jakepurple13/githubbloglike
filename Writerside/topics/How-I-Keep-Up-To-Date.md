@@ -13,6 +13,8 @@ Well, I'm going to list all the ways I keep up to date with this stuff!
     - An incredible repository that, when watching for releases, will automatically let you know when AndroidX has a
       release!
 
+- [Android Developers Blog](https://android-developers.googleblog.com/)
+
 - [Mishaal Rahman](https://linktr.ee/MishaalRahman)
     - He does super deep dives into Android that are always useful and informative.
 
@@ -35,6 +37,13 @@ Well, I'm going to list all the ways I keep up to date with this stuff!
 
 - [John O'Reilly](https://github.com/joreilly)
     - [Twitter Link](https://x.com/joreilly)
+
+- [Gabor Varadi](https://github.com/zhuinden)
+    - [Twitter Link](https://x.com/Zhuinden)
+
+- [Vasiliy Zukanov](https://github.com/techyourchance)
+    - [Twitter Link](https://x.com/VasiliyZukanov)
+    - I don't always agree with everything he says, but, it gives me a chance to form my own thoughts.
 
 - GitHub Topics
     - This might be a bit of a strange one to some people, but one of the best ways I find myself learning more and
