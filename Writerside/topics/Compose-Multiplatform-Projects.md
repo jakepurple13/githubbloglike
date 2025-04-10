@@ -1,5 +1,7 @@
 # Compose Multiplatform Projects
 
+* [Five of a Kind](https://github.com/jakepurple13/FiveOfAKind_Modern/)
+  * [Wasm Link](https://jakepurple13.github.io/FiveOfAKind_Modern/)
 * [Solitaire](https://github.com/jakepurple13/Solitaire)
     * [Wasm Link](https://jakepurple13.github.io/Solitaire/)
 * [24 Game](https://github.com/jakepurple13/TwentyFourGame)
