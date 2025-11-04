@@ -140,7 +140,7 @@ Hoo boy, that's a lot. But wait, most of these are platform-specific...Except...
 
 `DirectNavigationEventInput`, could you be my savior?
 
-Let's look at this code!
+Let's look at the code!
 
 ```kotlin
 /**
