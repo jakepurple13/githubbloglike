@@ -105,7 +105,7 @@ back?.onBackPressed()
 
 Simple, clean, and it works!
 
-![Screenshot 2025-11-04 at 08.39.35.png](../images/Screenshot 2025-11-04 at 08.39.35.png)
+![Screenshot 2025-11-04 at 08.39.35.png](Screenshot 2025-11-04 at 08.39.35.png)
 
 Oh...right...Multiplatform...
 
@@ -122,19 +122,19 @@ Iiiiinteresting!
 
 What can I do with this?
 
-![Screenshot 2025-11-04 at 08.42.01.png](../images/Screenshot 2025-11-04 at 08.42.01.png)
+![Screenshot 2025-11-04 at 08.42.01.png](Screenshot 2025-11-04 at 08.42.01.png)
 
 Ooookay, not...incredibly helpful.
 
 But it can't end there. So, `NavigationEventInput`...What is that?
 
-![Screenshot 2025-11-04 at 08.50.30.png](../images/Screenshot 2025-11-04 at 08.50.30.png)
+![Screenshot 2025-11-04 at 08.50.30.png](Screenshot 2025-11-04 at 08.50.30.png)
 
 Okay! Cool...What? I get the gist of it...But now how do I use it?
 Is there anything I can already use? I have a motto to never recreate the wheel.
 So let's go digging! I need something that will work on all platforms.
 
-![Screenshot 2025-11-04 at 08.53.02.png](../images/Screenshot 2025-11-04 at 08.53.02.png)
+![Screenshot 2025-11-04 at 08.53.02.png](Screenshot 2025-11-04 at 08.53.02.png)
 
 Hoo boy, that's a lot. But wait, most of these are platform-specific...Except...one!
 
