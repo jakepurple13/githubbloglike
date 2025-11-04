@@ -122,7 +122,7 @@ Iiiiinteresting!
 
 What can I do with this?
 
-![Screenshot 2025-11-04 at 08.42.01.png](Screenshot 2025-11-04 at 08.42.01.png)
+![Screenshot 2025-11-04 at 08.42.01.png]($PROJECT_DIR$/writerside/images/Screenshot 2025-11-04 at 08.42.01.png)
 
 Ooookay, not...incredibly helpful.
 
