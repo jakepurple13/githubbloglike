@@ -370,8 +370,8 @@ Some things to note here:
     - Without the liquid glass effect on the FAB, it looked a little off. So, I started to around with this and noticed
       it actually looked REALLY good with the same liquid glass effect! So, I ran with it.
 
-And now lets see how this looks with the default values:
-![Tada!]()
+And now lets see how Liquid Glass looks with the default values:
+![liquid_glass_bar.png](liquid_glass_bar.png)
 
 ## The Conclusion
 
