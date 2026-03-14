@@ -366,8 +366,9 @@ Some things to note here:
       separately.
 - I am still passing the showBlur into some places, that is to make sure the background for some components can have a
   transparent background.
-- You might have noticed that the FloatingActionButton not have some support, but only for the liquid glass effect.
-    - Without the liquid glass effect on the FAB, it looked a little off. So, I started to around with this and noticed
+- You might have noticed that the FloatingActionButton now has some support, but only for the liquid glass effect.
+    - Without the liquid glass effect on the FAB, it looked a little off. So, I started to play around with this and
+      noticed
       it actually looked REALLY good with the same liquid glass effect! So, I ran with it.
 
 And now lets see how Liquid Glass looks with the default values:
